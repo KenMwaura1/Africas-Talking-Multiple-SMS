@@ -14,7 +14,7 @@ at.initialize(username, api_key)
 wb = load_workbook('sample.xlsx')
 print(wb.sheetnames)
 sheet1 = wb['Sheet1']
-# print(sheet1['B2'].value)
+
 names_cell_range = sheet1['B2:B4']
 number_cell_range = sheet1['C2:C4']
 

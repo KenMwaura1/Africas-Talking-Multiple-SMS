@@ -26,8 +26,11 @@ Both can be obtained by [signing up/logging into Africas Talking](https://www.ac
    
     `cp .env-example .env `
 5. Add your credentials to the .env file
-s
-5. Run the script 
+
+6. Install the required dependencies
+   
+    `pip Install -r requirements`
+7. Run the script 
 
     `python multiple-sms.py`
 
