@@ -20,8 +20,6 @@ number_cell_range = sheet1['C2:C4']
 
 
 def send_messages():
-    client_name = ''
-    recipients = ''
     for row in sheet1.iter_rows(values_only=True):
         name = row[1]
         number = f"+254{row[2]}"
