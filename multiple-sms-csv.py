@@ -25,7 +25,7 @@ def send_messages():
             # Get the current date and time
             local_time = datetime.datetime.now()
             # create a customized message
-            message = f"Hey{name}, this is a customized message sent on {local_time}"
+            message = f"Hey {name}, this is a customized message sent on {local_time}"
             # For each entry send a customized message
             try:
                 response = sms.send(message, [number])
