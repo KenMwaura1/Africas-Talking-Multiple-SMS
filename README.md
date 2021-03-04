@@ -19,11 +19,19 @@ Both can be obtained by [signing up/logging into Africas Talking](https://www.ac
 2. Create a virtual environment (venv)
    
    `python venv venv`
+
  .   Activate the virtual environment
       
       `source ./scripts/activate`
+
+If you are using [pyenv](https://github.com/pyenv/pyenv)
+
+2a. `pyenv virtualenv at-project`
+
+2b. `pyenv activate at-project`
 3. Ensure the spreadsheet is in the same folder as the script
- 
+   
+    `cd at-project`
 4. Create a `.env` file and add your credentials 
    OR Copy the included example
    
@@ -35,6 +43,10 @@ Both can be obtained by [signing up/logging into Africas Talking](https://www.ac
     `pip Install -r requirements`
 7. Run the script 
 
-    `python multiple-sms.py`
+    `python multiple-sms-excel.py`
+
+    OR 
+   
+    `python multiple-sms-csv.py`
 
 
