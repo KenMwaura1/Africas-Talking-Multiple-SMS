@@ -25,8 +25,10 @@ def send_messages():
                 print(name, number)
                 # Get the current date and time
                 local_time = datetime.datetime.now()
+                date_difference = datetime.timedelta(days=5)
+                meeting_date = local_time + date_difference
                 # create a customized message
-                message = f"Hey {name}, this is a customized message sent on {local_time}"
+                message = f"Hello {name}, this message sent to inform you of a meeting scheduled on {meeting_date}"
                 # For each entry send a customized message
                 try:
                     response = sms.send(message, [number])
@@ -35,5 +37,6 @@ def send_messages():
                     print(f'Uh oh we have a problem: {e}')
             else:
                 print("Not a valid number")
+
 
 send_messages()
