@@ -10,7 +10,6 @@ api_key = os.getenv("api_key")
 at.initialize(username, api_key)
 sms = at.SMS
 
-at.initialize(username, api_key)
 wb = load_workbook('sample.xlsx')
 print(wb.sheetnames)
 sheet1 = wb['Sheet1']
@@ -23,8 +22,10 @@ def send_messages():
     for row in sheet1.iter_rows(values_only=True):
         name = row[1]
         number = f"+254{row[2]}"
+        lesson = row[3]
+        lesson_date = "Friday 12 March at 8.00 am "
         print(name,number)
-        message = f"hey {name} from python using africas talking API"
+        message = f"hey {name}  Kindly note we have a lecture scheduled on {lesson_date}"
         try:
             response = sms.send(message, [number])
             print(response)
