@@ -2,7 +2,11 @@
 [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # Africas-Talking-Multiple-SMS 
-This is a simple script utilizing python and the Africas Talking to send bulk texts from a excel sheet.
+This is a simple script utilizing python and the Africas Talking API to send bulk texts from a csv and an Excel sheet.spread
+
+Read the corresponding articles: 
+- [Sending Bulk SMS using Africas Talking, Python and CSV](https://dev.to/ken_mwaura1/sending-bulk-sms-using-africas-talking-python-and-csv-5bf5)
+- [Sending Bulk SMS using Africas Talking, Python and Excel](https://dev.to/ken_mwaura1/sending-bulk-sms-using-africas-talking-python-and-excel-5655)
 # Points to note
 This project is under current development.
 
