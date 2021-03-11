@@ -25,7 +25,7 @@ def send_messages():
         lesson = row[3]
         lesson_date = "Friday 12 March at 8.00 am "
         print(name,number)
-        message = f"hey {name}  Kindly note we have a lecture scheduled on {lesson_date}"
+        message = f"hey {name}  Kindly note {lesson} lecture is scheduled on {lesson_date}"
         try:
             response = sms.send(message, [number])
             print(response)
